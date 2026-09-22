@@ -71,7 +71,6 @@ class SubtitleTTSOutput(BaseModel):
     """字幕压制与配音节点输出"""
     video_with_subtitles_url: str = Field(..., description="已压制字幕的视频URL")
     voiceover_audio_url: str = Field(..., description="文案生成的配音音频URL")
-    subtitle_segments: List[dict] = Field(default=[], description="字幕时间轴片段列表")
 
 
 # ---------- 节点4：最终合成 ----------

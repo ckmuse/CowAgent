@@ -7,7 +7,7 @@
 |-------|---------|------|---------|---------|---------|
 | concat_video | `nodes/concat_video_node.py` | task | 将首帧+中间+尾帧视频拼接并转存对象存储 | - | - |
 | copy_generation | `nodes/copy_generation_node.py` | agent | 根据提示词与时长生成解说文案 | - | `config/copy_generation_llm_cfg.json` |
-| subtitle_tts | `nodes/subtitle_tts_node.py` | task | 拆分字幕时间轴、TTS 配音并压制到视频 | - | - |
+| subtitle_tts | `nodes/subtitle_tts_node.py` | task | TTS 配音、语音识别(ASR)生成精确时间轴字幕并压制到视频（大字号） | - | - |
 | final_compile | `nodes/final_compile_node.py` | task | 合成配音主音轨、叠加背景音乐同步并上传成品 | - | - |
 
 **类型说明**: task(task节点) / agent(大模型) / condition(条件分支) / looparray(列表循环) / loopcond(条件循环)
